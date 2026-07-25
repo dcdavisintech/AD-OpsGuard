@@ -1,0 +1,15 @@
+{
+  "DomainName": "corp.davistech.internal",
+  "BaseOU": "OU=Corporate,DC=corp,DC=davistech,DC=internal",
+  "DisabledUserOU": "OU=Disabled_Accounts,OU=Corporate,DC=corp,DC=davistech,DC=internal",
+  "PrivilegedGroups": [
+    "Domain Admins",
+    "Enterprise Admins"
+  ],
+  "ApprovedDomainAdmins": [
+    "sec_admin_davis",
+    "svc_ad_automation",
+    "breakglass_admin"
+  ],
+  "LogPath": "./logs/ad_opsguard_audit.json"
+}

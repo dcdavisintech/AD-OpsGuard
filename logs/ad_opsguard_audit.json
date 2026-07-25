@@ -1,0 +1,56 @@
+[
+    {
+        "Timestamp":  "2026-07-25T15:57:53.4912079-05:00",
+        "Group":  "Domain Admins",
+        "User":  "sec_admin_davis",
+        "Status":  "COMPLIANT",
+        "ActionTaken":  "NONE",
+        "Severity":  "INFO",
+        "ComplianceType":  "PrivilegedGroupDrift"
+    },
+    {
+        "Timestamp":  "2026-07-25T15:57:53.4912079-05:00",
+        "Group":  "Domain Admins",
+        "User":  "svc_ad_automation",
+        "Status":  "COMPLIANT",
+        "ActionTaken":  "NONE",
+        "Severity":  "INFO",
+        "ComplianceType":  "PrivilegedGroupDrift"
+    },
+    {
+        "Timestamp":  "2026-07-25T15:57:53.5033158-05:00",
+        "Group":  "Domain Admins",
+        "User":  "unauthorized_contractor",
+        "Status":  "NON_COMPLIANT",
+        "ActionTaken":  "REVOKED",
+        "Severity":  "CRITICAL",
+        "ComplianceType":  "PrivilegedGroupDrift"
+    },
+    {
+        "Timestamp":  "2026-07-25T15:57:53.5050104-05:00",
+        "Group":  "Enterprise Admins",
+        "User":  "sec_admin_davis",
+        "Status":  "COMPLIANT",
+        "ActionTaken":  "NONE",
+        "Severity":  "INFO",
+        "ComplianceType":  "PrivilegedGroupDrift"
+    },
+    {
+        "Timestamp":  "2026-07-25T15:57:53.5050104-05:00",
+        "Group":  "Enterprise Admins",
+        "User":  "svc_ad_automation",
+        "Status":  "COMPLIANT",
+        "ActionTaken":  "NONE",
+        "Severity":  "INFO",
+        "ComplianceType":  "PrivilegedGroupDrift"
+    },
+    {
+        "Timestamp":  "2026-07-25T15:57:53.5050104-05:00",
+        "Group":  "Enterprise Admins",
+        "User":  "unauthorized_contractor",
+        "Status":  "NON_COMPLIANT",
+        "ActionTaken":  "REVOKED",
+        "Severity":  "CRITICAL",
+        "ComplianceType":  "PrivilegedGroupDrift"
+    }
+]
