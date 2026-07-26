@@ -54,3 +54,10 @@ AD-OpsGuard/
   ],
   "LogPath": "./logs/ad_opsguard_audit.json"
 }
+---
+
+## 🚀 Usage & Execution
+
+### Run Full End-to-End Orchestration (Mock Mode + Remediation)
+```powershell
+.\src\AD-OpsGuard.ps1 -Action FullRun -Mock -Remediate
