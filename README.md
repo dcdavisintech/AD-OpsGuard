@@ -24,7 +24,7 @@ AD-OpsGuard/
     │   ├── Compliance.psm1
     │   └── UserLifecycle.psm1
     └── AD-OpsGuard.ps1
-    ```
+```
     ## ✨ Key Features
 
 * **Automated User Onboarding Pipeline:** Parses incoming user feeds (`new_hires.csv`), standardizes identity naming conventions (`SamAccountName`, `UPN`), generates temporary credentials, and provisions accounts directly into target OUs.
