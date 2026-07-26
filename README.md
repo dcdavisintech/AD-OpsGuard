@@ -54,7 +54,7 @@ AD-OpsGuard/
   ],
   "LogPath": "./logs/ad_opsguard_audit.json"
 }
----
+```
 
 ## 🚀 Usage & Execution
 
