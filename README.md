@@ -62,7 +62,7 @@ AD-OpsGuard/
 ```powershell
 .\src\AD-OpsGuard.ps1 -Action FullRun -Mock -Remediate
 ### Run Individual Workflows
-```powershell
+powershell
 # Execute Onboarding Pipeline Only
 .\src\AD-OpsGuard.ps1 -Action Onboard -Mock
 
