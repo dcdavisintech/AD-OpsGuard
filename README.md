@@ -24,3 +24,33 @@ AD-OpsGuard/
     │   ├── Compliance.psm1
     │   └── UserLifecycle.psm1
     └── AD-OpsGuard.ps1
+    ```
+    ## ✨ Key Features
+
+* **Automated User Onboarding Pipeline:** Parses incoming user feeds (`new_hires.csv`), standardizes identity naming conventions (`SamAccountName`, `UPN`), generates temporary credentials, and provisions accounts directly into target OUs.
+* **Zero-Trust Offboarding Pipeline:** Processes offboarding lists (`terminations.csv`), instantly disables accounts, strips all secondary security group memberships, scrambles credentials, and moves objects to an isolated Quarantine OU.
+* **Privileged Group Compliance Engine:** Continuously monitors `Domain Admins` and `Enterprise Admins` against an approved administrator baseline (`settings.json`).
+* **Automated Drift Remediation:** Automatically revokes unauthorized group additions in real time when executed with `-Remediate`.
+* **SIEM-Ready Audit Telemetry:** Outputs structured JSON logs formatted for direct ingestion into Azure Log Analytics, Microsoft Sentinel, or Splunk.
+* **Safe Dry-Run Execution:** Supports a full `-Mock` execution mode allowing validation across non-domain endpoint devices.
+
+---
+
+## 🛠️ Configuration (`settings.json`)
+
+```json
+{
+  "DomainName": "corp.davistech.internal",
+  "BaseOU": "OU=Corporate,DC=corp,DC=davistech,DC=internal",
+  "DisabledUserOU": "OU=Disabled_Accounts,OU=Corporate,DC=corp,DC=davistech,DC=internal",
+  "PrivilegedGroups": [
+    "Domain Admins",
+    "Enterprise Admins"
+  ],
+  "ApprovedDomainAdmins": [
+    "sec_admin_davis",
+    "svc_ad_automation",
+    "breakglass_admin"
+  ],
+  "LogPath": "./logs/ad_opsguard_audit.json"
+}
