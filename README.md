@@ -61,9 +61,9 @@ AD-OpsGuard/
 ### Run Full End-to-End Orchestration (Mock Mode + Remediation)
 ```powershell
 .\src\AD-OpsGuard.ps1 -Action FullRun -Mock -Remediate
-
+```
 ### Run Individual Workflows
-powershell
+```powershell
 # Execute Onboarding Pipeline Only
 .\src\AD-OpsGuard.ps1 -Action Onboard -Mock
 
@@ -73,3 +73,13 @@ powershell
 # Run Security Audit Only
 .\src\AD-OpsGuard.ps1 -Action Audit -Mock -Remediate
 ```
+
+---
+
+## 📷 Execution Screenshots & Verification
+
+### 1. Orchestration Execution & Unauthorized Access Remediation
+![Execution Run](assets/02_execution_run.png)
+
+### 2. Generated SIEM JSON Audit Log
+![JSON Audit Log](assets/03_audit_log_json.png)
