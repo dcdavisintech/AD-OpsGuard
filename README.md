@@ -59,7 +59,7 @@ AD-OpsGuard/
 ## 🚀 Usage & Execution
 
 ### Run Full End-to-End Orchestration (Mock Mode + Remediation)
-```powershell
+powershell
 .\src\AD-OpsGuard.ps1 -Action FullRun -Mock -Remediate
 ### Run Individual Workflows
 ```powershell
