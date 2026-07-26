@@ -71,3 +71,4 @@ AD-OpsGuard/
 
 # Run Security Audit Only
 .\src\AD-OpsGuard.ps1 -Action Audit -Mock -Remediate
+```
