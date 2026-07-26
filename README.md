@@ -61,3 +61,13 @@ AD-OpsGuard/
 ### Run Full End-to-End Orchestration (Mock Mode + Remediation)
 ```powershell
 .\src\AD-OpsGuard.ps1 -Action FullRun -Mock -Remediate
+### Run Individual Workflows
+```powershell
+# Execute Onboarding Pipeline Only
+.\src\AD-OpsGuard.ps1 -Action Onboard -Mock
+
+# Execute Zero-Trust Offboarding Pipeline Only
+.\src\AD-OpsGuard.ps1 -Action Offboard -Mock
+
+# Run Security Audit Only
+.\src\AD-OpsGuard.ps1 -Action Audit -Mock -Remediate
